@@ -34,7 +34,6 @@ pprint('1b. There are ' + str(numvalidgoogle) + ' valid google_aids in the datas
 pprint('1b. There are ' + str(numvalidios) + ' valid ios_ifas in the dataset')
 
 #2.1 -  plot a histogram from the data obtained from exercise 1a
-#need to do this
 iddata = pd.DataFrame(columns = ['affiliate_ids', 'numuniqueiosifas', 'numuniquegoogleaids'])
 for i, affiliateid in enumerate(uniqueaffiliateids):
 	numuniqueiosifas = len(df[(df.affiliate_id == affiliateid)].ios_ifa.unique())
